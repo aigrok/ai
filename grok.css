@@ -9,9 +9,9 @@ html{
 }
 body{
 	background: #000;
-    color: #d5dbe0;
-    line-height: 1.75;
-    text-rendering: optimizeSpeed;
+    	color: #d5dbe0;
+    	line-height: 1.75;
+    	text-rendering: optimizeSpeed;
 }
 header{
 	z-index: 999;
