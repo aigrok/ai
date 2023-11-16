@@ -397,6 +397,11 @@ header .navigation .navigation_menu a:hover:before{
 	width: 90px;
 	height: 90px;
 }
+@media (max-width: 420px){
+	.base h{
+		font-size: 3em;
+	}
+}
 @media (max-width: 1040px){
 	.mainbox{
 		flex-direction: column;
@@ -434,10 +439,17 @@ header .navigation .navigation_menu a:hover:before{
 		height: 150px;
 	}
 }
+@media (max-width: 420px){
+	.voltinu img{
+		width: 300px;
+		height: 200px;
+	}
+}
 .swapinu{
 	display: flex;
 	justify-content: center;
 }
+
 .partner{
 	width: 100%;
 	min-height: 50vh;
@@ -498,13 +510,62 @@ header .navigation .navigation_menu a:hover:before{
 	height: 40px;
 	overflow: hidden;
 }
+@media (max-width: 560px){
+	.boxpa {
+  	width: 170px;
+  	height: 130px;
+  }
+}
+.elontweet{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.tweet{
+	margin-top: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+}
+.welon{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.welon img{
+	margin-left: 20px;
+	width: 380px;
+	height: 330px;
+}
+@media (max-width: 1040px){
+	.welon img{
+	width: 300px;
+	height: 280px;
+}
+}
+@media (max-width: 768px){
+	.welon{
+		display: flex;
+		flex-direction: column;
+	}
+	.welon img{
+		width: 100%;
+		height: 300px;
+		margin-left: 0;
+		margin-top: 20px;
+	}
+}
 .footer{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 100%;
-	height: 100vh;
+	height: 50vh;
 }
 .mainfo{
 	width: 80%;
