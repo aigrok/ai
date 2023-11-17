@@ -195,6 +195,7 @@ header .navigation .navigation_menu a:hover:before{
     position: relative;
     display: block;
     color: #fff;
+    margin-left: 10px;
 }
 .welcome span:after {
     display: block;
@@ -209,7 +210,7 @@ header .navigation .navigation_menu a:hover:before{
     animation: span2 0.5s ease-out forwards;
 }
 . span+span {
-    margin-left: 9px;
+    margin-left: 20px;
 }
 .welcome span:nth-child(2), 
 .welcome span:nth-child(2):after {
@@ -255,6 +256,7 @@ header .navigation .navigation_menu a:hover:before{
 .welcome span:nth-child(10):after {
     animation-delay: 1.85s;
 }
+
 @keyframes span1{
 	0% {
 	    opacity: 0;
