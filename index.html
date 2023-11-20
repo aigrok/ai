@@ -99,11 +99,12 @@
                   <h>GROK AI</h>
                 </div>
               </div>
-              <div class="boxin" data-aos="fade-down">
+              <div class="boxin" data-aos="fade-down" > 
                 <div class="inbox">
                   <h>Contract</h>
                   <img src="chip.png">
-                  <h>0x6e78...B45f1</h>
+                  <h>0x6e78...B45f1<i class="fa fa-clone" id="copyIcon" style="font-size:20px" aria-hidden="true"></i></h>
+                  <h id="contentToCopy" class="copied" style="display: none;">0x6e78f65A115e80c68471f3846c11D824e73B45f1</h>
                 </div>
               </div>
               <div class="boxin" data-aos="fade-up">
@@ -240,6 +241,27 @@
       <div class="final">
         <h>Contact: support@aigrok-bnb.com</h>
       </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var contentToCopy = document.getElementById('contentToCopy');
+    var copyIcon = document.getElementById('copyIcon');
+
+    copyIcon.addEventListener('click', function () {
+        var tempTextArea = document.createElement('textarea');
+        tempTextArea.value = contentToCopy.textContent;
+
+        document.body.appendChild(tempTextArea);
+
+        tempTextArea.select();
+        tempTextArea.setSelectionRange(0, 99999);
+
+        document.execCommand('copy');
+
+        document.body.removeChild(tempTextArea);
+    });
+});
+
+  </script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script>AOS.init({duration: 1500});</script>
   </body>
 </html>
