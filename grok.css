@@ -274,6 +274,10 @@ header .navigation .navigation_menu a:hover:before{
 	    opacity: 0;
 	}
 }
+.widget-button{
+	display: flex;
+
+}
 .wiggle-btn{
 	z-index: 1;
 	position: relative;
